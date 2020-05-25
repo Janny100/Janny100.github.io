@@ -1,5 +1,5 @@
-# Blog Post
-## My first Blog Post
+# ITA Report Blog
+## Report List
 * <a href="Janny100.github.io/SimpleLayout.html">Report_Simple Layout</a>
 * Report_Responsive Web
   <ol><a href="Janny100.github.io/Resp_Mostly Fluid.html">1. Mostly Fluid</a></ol>
