@@ -2,6 +2,9 @@
 ## My first Blog Post
 * Report_Simple Layout
 * Report_Responsive Web
-  1.Mostly Fluid  2.Column Drop  3.Layout Shifter
-  4.Tiny Tweaks  5.Off Canvas
+  <ol>1. Mostly Fluid</ol>
+  <ol>2. Column Drop</ol>
+  <ol>3. Layout Shifter</ol>
+  <ol>4. Tiny Tweaks</ol>
+  <ol>5. Off Canvas</ol>
 * Report_NaverLoginPage CloneCoding
