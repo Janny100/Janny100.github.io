@@ -1,5 +1,5 @@
-# Blog Post
-## My first Blog Post
+# ITA Report Blog
+## Report List
 * Report_Simple Layout
 * Report_Responsive Web
   <ol>1. Mostly Fluid</ol>
