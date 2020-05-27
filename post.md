@@ -2,9 +2,11 @@
 ## Report List
 * Report_Simple Layout
 * Report_Responsive Web
-  <ol>1. Mostly Fluid</ol>
-  <ol>2. Column Drop</ol>
-  <ol>3. Layout Shifter</ol>
-  <ol>4. Tiny Tweaks</ol>
-  <ol>5. Off Canvas</ol>
+<ol>
+  <li>1. Mostly Fluid</li>
+  <li>2. Column Drop</li>
+  <li>3. Layout Shifter</li>
+  <li>4. Tiny Tweaks</li>
+  <li>5. Off Canvas</li>
+</ol>
 * Report_NaverLoginPage CloneCoding
