@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>네이버 : 로그인</title>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <style>
+    body{
+      background-color: #f5f6f7;
+    }
+    a{
+      text-decoration: none;
+    }
+    a:visited{
+      color:black;
+    }
+    a:link{
+      color:black;
+    }
+    hr{
+      width="500";
+      size="1"
+      padding-top: 5px;
+    }
+    .bar{
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+    .bd{
+      font-weight: bolder;
+    }
+
+    .container{
+      width: 800px;
+      margin:0 auto;
+    }
+    .subcontainer{
+      width: 500px;
+      margin: 0 auto;
+    }
+
+    .b1{
+      display: flex;
+      justify-content: flex-end;
+      padding-top: 10px;
+      padding-right: 20px;
+    }
+
+    .b2{
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      height: 120px;
+      padding-top: 10px;
+      font-size: xx-large;
+      color: #00C73C;
+      font-weight: bold;
+    }
+    .b2 a:visited{
+      color: #00C73C;
+    }
+    .b2 a:link{
+      color: #00C73C;
+    }
+
+    .b3{
+      display: flex;
+      justify-content: center;
+    }
+    .b3 .logbox{
+      width: 500px;
+      height: 50px;
+      box-sizing: border-box;
+      background-color: white;
+      border: 1px solid #d1d9e0;
+      margin: 0 auto;
+      margin-bottom: 20px;
+    }
+    .b3 .log{
+      cursor: pointer;
+      margin: 10px;
+      width: 400px;
+      height: 30px;
+      box-sizing: border-box;
+      border: white;
+    }
+    .b3 .btn{
+      cursor: pointer;
+      margin: 10px;
+      width: 500px;
+      height: 60px;
+      border: 2px solid #00C73C;
+      background-color: #00C73C;
+      color: white;
+      box-sizing: border-box;
+      font-size: x-large;
+    }
+
+    .b4{
+      display: flex;
+      justify-content: space-between;
+      padding-top: 10px;
+      padding-bottom: 20px;
+      font-size: small;
+    }
+    .b4 .fa-check-circle{
+      font-size: large;
+      color: gray;
+    }
+    .b4 .fa-question-circle{
+      font-size: small;
+      color: gray;
+    }
+    .b4 #udl{
+      text-decoration: underline;
+    }
+    .b4 #onoff{
+      padding-right: 3px;
+    }
+    input[id="chk"] + label {
+      cursor: pointer;
+    }
+    input[id="chk"]:checked + label i {
+      cursor: pointer;
+      color: #13d139;
+    }
+    input[id="hp"] + label {
+      cursor: pointer;
+    }
+    input[id="on_off"] + label span:nth-child(1){
+      text-transform: uppercase;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    input[id="on_off"] + label span:nth-child(2){
+      display: none;
+    }
+    input[id="on_off"]:checked + label span:nth-child(1){
+      display: none;
+    }
+    input[id="on_off"]:checked + label span:nth-child(2){
+      display: inline;
+      text-transform: uppercase;
+      cursor: pointer;
+      color: #13d139;
+      font-weight: bold;
+    }
+
+    .b5{
+      display: flex;
+      justify-content: center;
+      font-size: small;
+    }
+
+    .b6{
+      border: 1px solid black;
+      width:500px;
+      height: 170px;
+      margin-top: 50px;
+      margin-bottom: 80px;
+    }
+
+    .b7{
+      font-size: small;
+      display: flex;
+      justify-content: center;
+      margin: 10px;
+    }
+    .b7 a:hover{
+      text-decoration: underline;
+      color: green;
+    }
+
+    .b8{
+      font-size: x-small;
+      display: flex;
+      justify-content: center;
+      align-items: baseline;
+      margin: 10px;
+    }
+    .b8 span{
+      margin-left: 2px;
+      margin-right: 2px;
+    }
+    .b8 #logo{
+      font-size: small;
+      font-weight: bolder;
+    }
+    .b8 #logo:visited{
+      color: #00C73C;
+    }
+    .b8 #logo:link{
+      color: #00C73C;
+    }
+    .b8 #cor:hover{
+      text-decoration: underline;
+      color: green;
+    }
+
+    @media (max-width: 800px){
+      .container, .subcontainer,
+      .b1, .b2, .b3, .b4, .b5{
+        width:100%;
+      }
+      .b2{
+        align-items: center;
+        height: 20px;
+        padding-top: 20px;
+        padding-bottom: 40px;
+        box-sizing: border-box;
+      }
+      h1{
+        font-size: xx-large;
+        font-weight: bold;
+      }
+      .b3{
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+      .b3 .logbox{
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+      }
+      .b3 .btn{
+        width: 100%;
+        margin: 0 auto;
+      }
+      .b3 .log{
+        width: 90%;
+        margin: 10px;
+      }
+
+      .b6{
+        margin: 0 auto;
+        margin-top: 50px;
+        margin-bottom: 80px;
+      }
+      .b7, .b8{
+        display: none;
+      }
+    }
+    @media (max-width: 1500px){
+      .b7, .b8{
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- header -->
+<div class="container">
+  <div class="b1">
+    <select name="언어선택">
+      <option value="ko_KR">한국어</option>
+      <option value="en_US">English</option>
+      <option value="zh-Hans_CN">中文(简体)</option>
+      <option value="zh-Hant_TW">中文(台灣)</option>
+    </select>
+  </div>
+
+<div class="subcontainer">
+  <div class="b2">
+    <h1><a href="www.naver.com">NAVER</a></h1>
+  </div>
+
+<!-- section -->
+  <div class="b3">
+    <form action="#" method="post">
+      <div class="logbox"><input type="text" name="id" placeholder="아이디" class="log" id="log1"></div>
+      <div class="logbox"><input type="password" name="pwd" placeholder="비밀번호" class="log" id="log2"></div>
+      <input type="submit" value="로그인" title="로그인" class="btn"><br>
+    </form>
+  </div>
+
+
+  <div class="b4">
+    <span>
+      <input type="checkbox" hidden="yes" id="chk">
+        <label for="chk">
+          <i class="far fa-check-circle"></i>
+          로그인 상태 유지
+        </label>
+    </span>
+    <span>
+      <span>
+        <a href="#" target="_black">IP보안</a>
+      </span>
+      <span>
+        <input type="checkbox" hidden="yes" id="on_off">
+        <label for="on_off">
+          <span>off</span>
+          <span id="onoff">on</span>
+        </label>
+      </span>
+      <span>|</span>
+      <span><a href="#" id="udl">일회용 로그인</a></span>
+      <span>
+        <input type="button" hidden="yes" id="hp">
+        <label for="hp"><i class="far fa-question-circle"></i></label>
+      </span>
+    </span>
+  </div>
+
+<hr>
+
+  <div class="b5">
+    <span><a href="#">아이디 찾기</a></span>
+    <span class="bar">|</span>
+    <span><a href="#">비밀번호 찾기</a></span>
+    <span class="bar">|</span>
+    <span><a href="#">회원가입</a></span>
+  </div>
+
+  <div class="b6">
+    <img src="#">
+  </div>
+
+<!-- footer -->
+  <div class="b7">
+    <span><a href="#">이용약관</a></span>
+    <span class="bar">|</span>
+    <span class="bd"><a href="#">개인정보처리방침</a></span>
+    <span class="bar">|</span>
+    <span><a href="#">책임의 한계와 법적고지</a></span>
+    <span class="bar">|</span>
+    <span><a href="#">회원정보 고객센터</a></span>
+  </div>
+
+  <div class="b8">
+    <span><a href="www.naver.com" id="logo">NAVER</a></span>
+    <span>Copyright</span>
+    <span>©</span>
+    <span class="bd"><a href="www.naver.com" id="cor">NAVER Corp.</a></span>
+    <span>All Rights Reserved.</span>
+  </div>
+
+</div>
+</div>
+</body>
+</html>
