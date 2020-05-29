@@ -10,5 +10,5 @@
       <li><a href="Janny100.github.io/Resp_Tiny Tweaks.html">Tiny Tweaks</a></li>
       <li><a href="Janny100.github.io/Resp_Off Canvas.html">Off Canvas</a></li>
     </ul>
-  <li><a href="NaverLoginPage_CloneCoding.html">Report_NaverLoginPage CloneCoding</a></li>
+  <li><a href="NaverLoginPage CloneCoding.html">Report_NaverLoginPage CloneCoding</a></li>
 </ol>
