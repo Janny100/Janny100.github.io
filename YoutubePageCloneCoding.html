@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Youtube</title>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <style>
+  .b1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: small;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+    background-color: black;
+  }
+  .b1 .logo:hover{
+    cursor: pointer;
+  }
+  .b1 .logo .fa-youtube{
+    color:red;
+  }
+  .b1 .logo span{
+    color:white;
+    margin-left: 3px;
+  }
+  .b1 .menu .fa-search:hover,.fa-bars:hover{
+    cursor: pointer;
+  }
+  .b1 .menu .fa-search,.fa-bars{
+    color:white;
+    margin:2px;
+    cursor: pointer;
+  }
+
+  .b3{
+    font-size: small;
+    color:blue;
+  }
+  .b3 ul{
+    padding:0px;
+    display:flex;
+    flex-direction:row;
+    margin-bottom:3px;
+  }
+  .b3 ul li{
+    list-style:none;
+    margin-right:5px;
+  }
+  .b3 ul li a{
+    text-decoration:none;
+  }
+  .b3 ul li a:visited{
+    text-decoration:none;
+    color:blue;
+  }
+
+  .b4{
+    display:flex;
+    flex-direction:row;
+    text-align: justify;
+  }
+  .b4 .fa-caret-down{
+    margin-left:20px;
+  }
+
+  .b5{
+    font-size:small;
+    color: gray;
+  }
+
+  .b6{
+    display:flex;
+    justify-content: space-around;
+    margin-top:20px;
+    margin-bottom:20px;
+  }
+  .b6 li{
+    list-style: none;
+  }
+  .b6 button{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+  .b6 button i {
+    margin: 0 auto;
+    margin-bottom: 5px;
+  }
+  .b6 .active{
+    color:blue;
+  }
+
+
+  .b7{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    height:60px;
+  }
+  .b7 .img_MetaData{
+    display:flex;
+    flex-direction:row;
+  }
+  .b7 .img_MetaData img{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    margin-right: 10px;
+  }
+  .b7 .metaData{
+    display:flex;
+    flex-direction:column;
+  }
+  .b7 .metaData .data{
+    font-size:small;
+    color:gray
+  }
+  .b7 .subscribe{
+    display:flex;
+    align-items:center;
+    text-transform:uppercase;
+    color:red;
+    height:60px;
+    background-color:yellow;
+  }
+
+  .b8{
+    color: gray;
+    margin-top:10px;
+    margin-bottom:10px;
+  }
+
+  .b9{
+    display:flex;
+    flex-direction:column;
+  }
+  .b9 .b9_1{
+    display:grid;
+    grid-template-columns:35fr 60fr 5fr;
+    margin-bottom:10px;
+    box-sizing: border-box;
+  }
+  .b9 .b9_1 img{
+    flex: 1 1 35%;
+  }
+  .b9 .b9_1 .image{
+    margin-right: 10px;
+  }
+  .b9 .b9_1 .image img{
+    width:100%;
+  }
+  .b9 .b9_1 .subInfo .subTitle{
+    flex: 1 1 60%;
+    font-size:small;
+    text-align: justify;
+  }
+  .b9 .b9_1 .subInfo .subMetaData{
+    font-size:x-small;
+    color:gray;
+  }
+  .b9 .b9_1 .fa-ellipsis-v{
+    flex: 1 1 5%;
+    font-size:small;
+    color:black;
+    margin-left:20px;
+  }
+  .b9 .b9_1 .fa-ellipsis-v:hover{
+    cursor:pointer;
+  }
+
+  @media (min-width: 800px){
+    .box{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 10px;
+    }
+  }
+  @media (min-width:1200px){
+    .container{
+      width:1200px;
+      margin: 0 auto;
+    }
+  }
+  </style>
+</head>
+
+<body>
+<div class="container">
+
+<div class="a1">
+  <div class="b1">
+    <div class="logo">
+      <i class="fab fa-youtube"></i><span>Youtube</span>
+    </div>
+    <div class="menu">
+      <i class="fas fa-search"></i>
+      <i class="fas fa-bars"></i>
+    </div>
+  </div>
+
+  <div class="b2">
+    <video controls width="100%">
+      <source src="/media/examples/flower.mp4" type="video/mp4">
+      Sorry, your browser doesn't support embedded videos.
+    </video>
+  </div>
+</div>
+
+<div class="box">
+<div class="a2">
+  <div class="b3">
+    <ul>
+      <li><a href="#">#DreamCoding</a></li>
+      <li><a href="">#DreamCoder</a></li>
+      <li><a href="">#Ellie</a></li>
+    </ul>
+  </div>
+
+  <div class="b4">
+    <div class="mainTitle">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua.
+    </div>
+    <div class="opener">
+      <i class="fas fa-caret-down"></i>
+    </div>
+  </div>
+
+  <div class="b5">
+    <div class="visit">1M views 1 month ago</div>
+  </div>
+
+  <div class="b6">
+    <li><button><i class="active fas fa-thumbs-up"></i><span>1K</span></button></li>
+    <li><button><i class="fas fa-thumbs-down"></i><span>0</span></button></li>
+    <li><button><i class="fas fa-share"></i><span>Share</span></button></li>
+    <li><button><i class="fas fa-plus"></i><span>Save</span></button></li>
+    <li><button><i class="fas fa-flag"></i><span>Report</span></button></li>
+  </div>
+
+  <div class="b7">
+    <div class="img_MetaData">
+      <span><img src="" alt=""></span>
+      <div class="metaData">
+        <div class="creator">드림코딩 by 엘리</div>
+        <div class="data">1M subscribers</div>
+      </div>
+    </div>
+    <div class="subscribe">subscribe</div>
+  </div>
+</div>
+<div class="a3">
+  <div class="b8">Up next</div>
+
+  <div class="b9">
+    <div class="b9_1">
+      <div class="image">
+        <img src="" alt="" />
+      </div>
+      <div class="subInfo">
+        <div class="subTitle">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua.
+        </div>
+        <div class="subMetaData">
+          <div>드림코딩 by 엘리</div>
+          <div>82K views</div>
+        </div>
+      </div>
+      <div><i class="fas fa-ellipsis-v"></i></div>
+    </div>
+    <div class="b9_1">
+      <div class="image">
+        <img src="" alt="" />
+      </div>
+      <div class="subInfo">
+        <div class="subTitle">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua.
+        </div>
+        <div class="subMetaData">
+          <div>드림코딩 by 엘리</div>
+          <div>82K views</div>
+        </div>
+      </div>
+      <div><i class="fas fa-ellipsis-v"></i></div>
+    </div>
+    <div class="b9_1">
+      <div class="image">
+        <img src="" alt="" />
+      </div>
+      <div class="subInfo">
+        <div class="subTitle">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua.
+        </div>
+        <div class="subMetaData">
+          <div>드림코딩 by 엘리</div>
+          <div>82K views</div>
+        </div>
+      </div>
+      <div><i class="fas fa-ellipsis-v"></i></div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+</div>
+</body>
+</html>
