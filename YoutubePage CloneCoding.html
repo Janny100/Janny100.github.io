@@ -37,7 +37,6 @@
 
   .b3{
     font-size: small;
-    color:blue;
   }
   .b3 ul{
     padding:0px;
@@ -51,10 +50,11 @@
   }
   .b3 ul li a{
     text-decoration:none;
+    color:#045FD4;
   }
   .b3 ul li a:visited{
     text-decoration:none;
-    color:blue;
+    color:#045FD4;
   }
 
   .b4{
@@ -62,8 +62,22 @@
     flex-direction:row;
     text-align: justify;
   }
-  .b4 .fa-caret-down{
-    margin-left:20px;
+  .b4 .mainTitle{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+  }
+  .b4 button{
+    border: none;
+    margin-left: 10px;
+  }
+  .b4 button:hover{
+    border:none;
+    cursor: pointer;
+  }
+  .b4 button:active{
+    background-color: gray;
   }
 
   .b5{
@@ -85,14 +99,16 @@
     flex-direction: column;
     padding: 0;
   }
+  .b6 button:hover{
+    cursor: pointer;
+  }
   .b6 button i {
     margin: 0 auto;
     margin-bottom: 5px;
   }
   .b6 .active{
-    color:blue;
+    color:#045FD4;
   }
-
 
   .b7{
     display:flex;
@@ -126,7 +142,7 @@
     text-transform:uppercase;
     color:red;
     height:60px;
-    background-color:yellow;
+    background-color:#f0f0f0;
   }
 
   .b8{
@@ -156,20 +172,22 @@
   }
   .b9 .b9_1 .subInfo .subTitle{
     flex: 1 1 60%;
-    font-size:small;
+    font-size:x-small;
     text-align: justify;
   }
   .b9 .b9_1 .subInfo .subMetaData{
-    font-size:x-small;
+    font-size:xx-small;
     color:gray;
   }
   .b9 .b9_1 .fa-ellipsis-v{
     flex: 1 1 5%;
-    font-size:small;
+    font-size:x-small;
     color:black;
-    margin-left:20px;
   }
-  .b9 .b9_1 .fa-ellipsis-v:hover{
+  .b9 .b9_1 button{
+    margin-left: 10px;
+  }
+  .b9 .b9_1 button:hover{
     cursor:pointer;
   }
 
@@ -180,10 +198,31 @@
       grid-gap: 10px;
     }
   }
+  @media (min-width:1000px){
+    .container{
+      width:1000px;
+      margin: 0 auto;
+    }
+  }
   @media (min-width:1200px){
     .container{
-      width:1200px;
-      margin: 0 auto;
+      width: 1200px;
+      display: grid;
+    }
+    .a1{
+      width:75%;
+    }
+    .box{
+      grid-template-columns: 75fr 25fr;
+    }
+    .a3 .b8{
+      display: none;
+    }
+    .a3{
+      display: block;
+      position: relative;
+      height: 100vh;
+      bottom: 492px;
     }
   }
   </style>
@@ -193,7 +232,7 @@
 <div class="container">
 
 <div class="a1">
-  <div class="b1">
+  <header class="b1">
     <div class="logo">
       <i class="fab fa-youtube"></i><span>Youtube</span>
     </div>
@@ -201,33 +240,34 @@
       <i class="fas fa-search"></i>
       <i class="fas fa-bars"></i>
     </div>
-  </div>
+  </header>
 
-  <div class="b2">
+  <section class="b2">
     <video controls width="100%">
       <source src="/media/examples/flower.mp4" type="video/mp4">
       Sorry, your browser doesn't support embedded videos.
     </video>
-  </div>
+  </section>
 </div>
 
 <div class="box">
-<div class="a2">
+<section class="a2">
   <div class="b3">
     <ul>
       <li><a href="#">#DreamCoding</a></li>
-      <li><a href="">#DreamCoder</a></li>
-      <li><a href="">#Ellie</a></li>
+      <li><a href="#">#DreamCoder</a></li>
+      <li><a href="#">#Ellie</a></li>
     </ul>
   </div>
 
   <div class="b4">
     <div class="mainTitle">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua.
+      Clone Coding: Youtube Mobile Website 유튜브 모바일 웹사이트 따라 만들기 |
+      프론트엔드 개발자 입문편: HTML, CSS ,Javascript 드림코딩과 함께하는
+      프론트엔드 실전 입문편
     </div>
     <div class="opener">
-      <i class="fas fa-caret-down"></i>
+      <button><i class="fas fa-caret-down"></i></button>
     </div>
   </div>
 
@@ -253,62 +293,62 @@
     </div>
     <div class="subscribe">subscribe</div>
   </div>
-</div>
-<div class="a3">
+</section>
+<section class="a3">
   <div class="b8">Up next</div>
 
-  <div class="b9">
-    <div class="b9_1">
+  <ul class="b9">
+    <li class="b9_1">
       <div class="image">
         <img src="" alt="" />
       </div>
       <div class="subInfo">
         <div class="subTitle">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua.
+          프론트엔드 강의, 프론트엔드 개발자가 되고 싶다면? 웹개발 입문자편 강의를
+          시작합니다 * (HTML, CSS, Javascript + 실전 프로젝트)
         </div>
         <div class="subMetaData">
           <div>드림코딩 by 엘리</div>
           <div>82K views</div>
         </div>
       </div>
-      <div><i class="fas fa-ellipsis-v"></i></div>
-    </div>
-    <div class="b9_1">
+      <div><button><i class="fas fa-ellipsis-v"></i></button></div>
+    </li>
+    <li class="b9_1">
       <div class="image">
         <img src="" alt="" />
       </div>
       <div class="subInfo">
         <div class="subTitle">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua.
+          HTML 기초, React 할때 꼭 필요한 팁! 쉽다고 무시하면 안돼요 | 프론트 엔드
+          개발자 입문편: HTML, CSS, Javascript
         </div>
         <div class="subMetaData">
           <div>드림코딩 by 엘리</div>
           <div>82K views</div>
         </div>
       </div>
-      <div><i class="fas fa-ellipsis-v"></i></div>
-    </div>
-    <div class="b9_1">
+      <div><button><i class="fas fa-ellipsis-v"></i></button></div>
+    </li>
+    <li class="b9_1">
       <div class="image">
         <img src="" alt="" />
       </div>
       <div class="subInfo">
         <div class="subTitle">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua.
+          HTML 태그 완성, 웹 포트폴리오 만들기 전에 꼭 보세요 | 프론트엔드 개발자
+          입문편: HTML, CSS, Javascript
         </div>
         <div class="subMetaData">
           <div>드림코딩 by 엘리</div>
           <div>82K views</div>
         </div>
       </div>
-      <div><i class="fas fa-ellipsis-v"></i></div>
-    </div>
-  </div>
+      <div><button><i class="fas fa-ellipsis-v"></i></button></div>
+    </li>
+  </ul>
 
-</div>
+</section>
 </div>
 
 </div>
