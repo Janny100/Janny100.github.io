@@ -87,19 +87,19 @@
                     <div>첨부</div>
                     <div>
                         <!-- 파일첨부 전 -->
-                        <div class="attach-wrap">
-                            <div class="attached">파일첨부</div>
-                            <div class="attach-file">
-                                <input type="file" class="filecustom">
-                                <div class="bn-attach"></div>
-                            </div>
+                      <div class="attach-wrap" id="attach-wrap">
+                        <div class="attached" id="attached">파일첨부</div>
+                        <div class="attach-file">
+                          <input type="file" class="filecustom" id="filecustom" name="filecustom" oninput="addAttach()">
+                          <div class="bn-attach"></div>
                         </div>
+                      </div>
 
                         <!-- 파일첨부 후 -->
                         <!-- <div class="attach-wrap">
                             <div class="attached">
                                 <a class="ico-trash"></a>ico-comment.png
-                            </div>
+                             </div>
                             <div class="attach-file">
                                 <input type="file" class="filecustom">
                                 <div class="bn-attach"></div>
@@ -109,12 +109,12 @@
                 </div>
                 <!-- BTN -->
                 <div class="btn-group" onclick="checkAll()">
-                    <button type="button" name="button">등록</button>
+                    <a>등록</a>
                 </div>
             </div>
             <!-- LIST -->
             <div class="table-responsive">
-                <table>
+                <table style="visibility:hidden">
                     <thead>
                         <tr>
                             <th>세미나 주제</th>
@@ -134,7 +134,6 @@
                             <td><a class="ico-down" href="#"></a></td>
                             <td><a class="ico-trash" href="#"></a></td>
                         </tr> -->
-
                 </table>
             </div>
             <!-- LIST END -->
