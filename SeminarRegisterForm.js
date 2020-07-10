@@ -4,6 +4,9 @@
   let str;
   let theCity;
   let theFee;
+  let indexAdd=0;
+  let indexDel=0;
+  let theFile;
 
   function titleText(){
     let len=0;
@@ -123,22 +126,66 @@
     }
   }
 
-  function tblAdd(){
-    let topBody = document.getElementById("tbl");
-    let row = topBody.insertRow(topBody.rows.length);
-    let cell1 = row.insertCell(0);
-    let cell2 = row.insertCell(1);
-    let cell3 = row.insertCell(2);
-    let cell4 = row.insertCell(3);
-    let cell5 = row.insertCell(4);
-    let cell6 = row.insertCell(5);
-    cell1.innerHTML = theTitle;
-    cell2.innerHTML = str;
-    cell3.innerHTML = theCity;
-    cell4.innerHTML = theFee;
-    cell5.innerHTML = '항목1';
-    cell6.innerHTML = '항목2';
+  //파일 첨부 확인
+  function checkAttach(){
+    theFile = document.getElementById("filecustom").value;
+    let temp = document.getElementById("attached");
+    if(theFile){
+      return true;
+    }
+    else{
+      return false;
+    }
   }
+
+  //파일 첨부
+  function addAttach(){
+    theFile = document.getElementById("filecustom").value;
+    let temp = document.getElementById("attached");
+    if(theFile){
+      temp.innerHTML = '<a class="ico-trash" onclick="delAttach()"></a>ico-comment.png';
+    }
+    else{
+      temp.innerHTML = '파일첨부';
+    }
+  }
+  //파일 삭제
+  function delAttach(){
+    let temp = document.getElementById("attached");
+    temp.innerHTML = '파일첨부';
+    alert("x");
+    // document.getElementById("filecustom").select();
+    // document.selection.clear();
+  }
+
+  //테이블 1열 추가
+  function tblAdd(){
+    document.querySelector("table").style.visibility = 'visible';
+    let tblBody = document.getElementById("tbl");
+    let row = tblBody.insertRow(tblBody.rows.length);
+    row.insertCell(0).innerHTML = '<td class="title">' + theTitle + '</td>';
+    row.insertCell(1).innerHTML = '<td>' + str + '</td>';
+    row.insertCell(2).innerHTML = '<td>' + theCity + '</td>';
+    row.insertCell(3).innerHTML = '<td>' + theFee + '</td>';
+    if(checkAttach()){
+      row.insertCell(4).innerHTML = '<td><a class="ico-down"></a></td>';
+    }
+    else{
+      row.insertCell(4).innerHTML = '';
+    }
+    row.insertCell(5).innerHTML = '<td><a class="ico-trash" onclick="tblDel()"></a><td>';
+    indexAdd++;
+  }
+  //테이블 1열 삭제
+  function tblDel(){
+    let tblBody = document.getElementById("tbl");
+    indexDel++;
+    tblBody.deleteRow(0);
+    if(indexAdd==indexDel){
+      document.querySelector("table").style.visibility = 'hidden';
+    }
+  }
+
   //총 검사 및 테이블 추가
   function checkAll(){
     if(checkTitle() && checkFee() && checkCity() && checkRoll()){
@@ -146,10 +193,4 @@
       alert("입력 완료");
     }
   }
-
-  //<td><a class="ico-down" href="#"></a></td>
-//  <td><a class="ico-trash" href="#"></a></td>
-
-
-
 </script>
