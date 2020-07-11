@@ -153,9 +153,8 @@
   function delAttach(){
     let temp = document.getElementById("attached");
     temp.innerHTML = '파일첨부';
-    alert("x");
-    // document.getElementById("filecustom").select();
-    // document.selection.clear();
+    document.getElementById("filecustom").select();
+    document.selection.clear();
   }
 
   //테이블 1열 추가
@@ -173,14 +172,19 @@
     else{
       row.insertCell(4).innerHTML = '';
     }
-    row.insertCell(5).innerHTML = '<td><a class="ico-trash" onclick="tblDel()"></a><td>';
+    row.insertCell(5).innerHTML = '<td><a class="ico-trash" onclick="tblDel()"><input type="checkbox" style="opacity:0"></a><td>';
     indexAdd++;
   }
   //테이블 1열 삭제
   function tblDel(){
     let tblBody = document.getElementById("tbl");
+    for(let i=0; i<tblBody.rows.length; i++){
+      let chkbox = tblBody.rows[i].cells[5].firstChild.firstChild.checked;
+      if(chkbox){
+        tblBody.deleteRow(i);
+      }
+    }
     indexDel++;
-    tblBody.deleteRow(0);
     if(indexAdd==indexDel){
       document.querySelector("table").style.visibility = 'hidden';
     }
@@ -190,7 +194,7 @@
   function checkAll(){
     if(checkTitle() && checkFee() && checkCity() && checkRoll()){
       tblAdd();
-      alert("입력 완료");
+      alert("등록 완료!");
     }
   }
 </script>
