@@ -128,7 +128,6 @@
   //파일 첨부 확인
   function checkAttach(){
     theFile = document.getElementById("filecustom").value;
-    let temp = document.getElementById("attached");
     if(theFile){
       return true;
     }
@@ -181,6 +180,7 @@
       let chkbox = tblBody.rows[i].cells[5].firstChild.firstChild.checked;
       if(chkbox){
         tblBody.deleteRow(i);
+        break;
       }
     }
     indexDel++;
