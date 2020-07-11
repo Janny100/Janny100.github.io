@@ -1,4 +1,3 @@
-<script type = text/javascript>
   let theTitle;
   let theRoll = [];
   let str;
@@ -197,4 +196,3 @@
       alert("등록 완료!");
     }
   }
-</script>
