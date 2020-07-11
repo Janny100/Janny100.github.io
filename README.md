@@ -12,4 +12,5 @@
     </ul>
   <li><a href="NaverLoginPage CloneCoding.html">Report_NaverLoginPage CloneCoding</a></li>
   <li><a href="YoutubePage CloneCoding.html">Report_YoutubePage CloneCoding</a></li>
+  <li><a href="SeminarRegisterForm.html">Report_SeminarRegisterForm</a></li>
 </ol>
