@@ -1,0 +1,66 @@
+*{box-sizing:border-box}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s,
+samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul,
+li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary, time, mark, audio, video
+{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;outline:none}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 200px;
+  margin: 0 auto;
+  border: 1px solid blue;
+  padding-top: 20px;
+}
+.container .imgGrp{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-left: 50px;
+  border-right: 50px;
+}
+.container .box{
+  display: flex;
+  flex-direction: space-around;
+  justify-content: center;
+}
+.container .box .imgBox{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+}
+.container .box .imgBox .boxTxt{
+  display: flex;
+  width: 100px;
+  height: 30px;
+  font-weight: bold;
+  color: white;
+  background-color: gray;
+  justify-content: center;
+  align-items: center;
+}
+.container .btn{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: small;
+  padding-top: 10px;
+  padding-left: 170px;
+  padding-right: 170px;
+}
+/* picture */
+.pic1 {width:100px; height:100px; background:url(btn_attach_del@2x.png) no-repeat center;}
+.pic2 {width:100px; height:100px; background:url(btn_download@2x.png) no-repeat center;}
+.pic3 {width:100px; height:100px; background:url(ico_attach@2x.png) no-repeat center;}
+
+.fa-circle{
+  opacity: 0.5;
+}
+.fa-circle:hover{
+  cursor: pointer;
+  opacity: 1;
+}
