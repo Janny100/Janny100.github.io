@@ -26,14 +26,30 @@ menu, nav, output, ruby, section, summary, time, mark, audio, video
   height:100px;
   margin-bottom: 10px;
   background:url(logo.png) no-repeat center;
+  cursor: pointer;
+}
+.container .logo:hover{
+  transform: scale(1.2);
 }
 .container .category{
   display: flex;
   flex-direction: row;
   width:100%;
-  justify-content: space-between;
+  height: 40px;
+  justify-content: space-around;
+  align-items: center;
   margin-top: 10px;
   margin-bottom: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.category img:hover{
+  cursor: pointer;
+  transform: scale(1.2);
+}
+.category div:hover{
+  transform: scale(1.2);
+  cursor: pointer;
 }
 .container .category .shirts,.pants,.skirt{
   width:30px;
