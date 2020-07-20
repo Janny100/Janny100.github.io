@@ -11,54 +11,26 @@
 
 <body>
   <div class="container">
-    <div class="imgGrp">
-      <ul class="box group1">
-        <li class="imgBox">
-          <div class="pic1"></div>
-          <div class="boxTxt">1번 사진</div>
+    <div class="carouselContainer">
+      <ul class="carousel">
+        <li>
+          <img class="img img1" src="btn_attach_del@2x.png" alt="">
+          <div class="txt txt1">1번 사진</div>
         </li>
-        <li class="imgBox">
-          <div class="pic2"></div>
-          <div class="boxTxt">2번 사진</div>
+        <li>
+          <img class="img img2" src="btn_download@2x.png" alt="">
+          <div class="txt txt2">2번 사진</div>
         </li>
-        <li class="imgBox">
-          <div class="pic3"></div>
-          <div class="boxTxt">3번 사진</div>
-        </li>
-      </ul>
-      <ul class="box group2">
-        <li class="imgBox">
-          <div class="pic1"></div>
-          <div class="boxTxt">4번 사진</div>
-        </li>
-        <li class="imgBox">
-          <div class="pic2"></div>
-          <div class="boxTxt">5번 사진</div>
-        </li>
-        <li class="imgBox">
-          <div class="pic3"></div>
-          <div class="boxTxt">6번 사진</div>
-        </li>
-      </ul>
-      <ul class="box group3">
-        <li class="imgBox">
-          <div class="pic1"></div>
-          <div class="boxTxt">7번 사진</div>
-        </li>
-        <li class="imgBox">
-          <div class="pic2"></div>
-          <div class="boxTxt">8번 사진</div>
-        </li>
-        <li class="imgBox">
-          <div class="pic3"></div>
-          <div class="boxTxt">9번 사진</div>
+        <li>
+          <img class="img img3" src="ico_attach@2x.png" alt="">
+          <div class="txt txt3">3번 사진</div>
         </li>
       </ul>
     </div>
     <div class="btn">
-      <i class="fas fa-circle"></i>
-      <i class="fas fa-circle"></i>
-      <i class="fas fa-circle"></i>
+      <i onclick="getIndex(1)" class="fas fa-circle"></i>
+      <i onclick="getIndex(2)" class="fas fa-circle"></i>
+      <i onclick="getIndex(3)" class="fas fa-circle"></i>
     </div>
   </div>
 </body>
