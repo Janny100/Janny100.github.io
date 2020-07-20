@@ -13,6 +13,6 @@
   <li><a href="NaverLoginPage CloneCoding.html">Report_NaverLoginPage CloneCoding</a></li>
   <li><a href="YoutubePage CloneCoding.html">Report_YoutubePage CloneCoding</a></li>
   <li><a href="SeminarRegisterForm.html">Report_SeminarRegisterForm</a></li>
-  <li></li>
+  <li><a href="Carousels.html">Report_Carousels</a></li>
   <li><a href="MiniGame.html">Report_MiniGame</a></li>
 </ol>
