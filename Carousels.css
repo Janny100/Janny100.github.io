@@ -5,58 +5,77 @@ samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol,
 li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary, time, mark, audio, video
-{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;outline:none}
+{margin:0;padding:0;border:0;list-style: none;}
 
 .container{
-  display: flex;
-  flex-direction: column;
-  width: 400px;
-  height: 200px;
+  width: 600px;
+  height: 400px;
   margin: 0 auto;
-  border: 1px solid blue;
-  padding-top: 20px;
 }
-.container .imgGrp{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  border-left: 50px;
-  border-right: 50px;
+
+/* carousel */
+.carousel{
+  width: 300px;
+  height: 300px;
+  position: relative;
+  left: 0;
+  transition: all .5s;
 }
-.container .box{
-  display: flex;
-  flex-direction: space-around;
-  justify-content: center;
+.carouselContainer{
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  border: 1px solid green;
+  overflow: hidden;
 }
-.container .box .imgBox{
+/* list css */
+li{
   display: flex;
   flex-direction: column;
-  border: 1px solid red;
-}
-.container .box .imgBox .boxTxt{
-  display: flex;
-  width: 100px;
-  height: 30px;
-  font-weight: bold;
-  color: white;
-  background-color: gray;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
+
+/* picture & text*/
+.img1, .img2, .img3{
+  position: absolute;
+  width: 300px;
+  height: 250px;
+  top: 0;
+  left: 0;
+}
+.img2{
+  left: 300px;
+}
+.img3{
+  left: 600px;
+}
+.txt1, .txt2, .txt3{
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 270px;
+  left: 150px;
+  transform: translateX(-50%);
+  transform:
+}
+.txt2{
+  left: 450px;
+  transform: translateX(-50%);
+}
+.txt3{
+  left: 750px;
+  transform: translateX(-50%);
+}
+/* button */
 .container .btn{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
   font-size: small;
-  padding-top: 10px;
-  padding-left: 170px;
-  padding-right: 170px;
+  text-align: center;
+  position: relative;
+  top: 35px;
 }
 /* picture */
-.pic1 {width:100px; height:100px; background:url(btn_attach_del@2x.png) no-repeat center;}
-.pic2 {width:100px; height:100px; background:url(btn_download@2x.png) no-repeat center;}
-.pic3 {width:100px; height:100px; background:url(ico_attach@2x.png) no-repeat center;}
-
 .fa-circle{
   opacity: 0.5;
 }
